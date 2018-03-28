@@ -27,3 +27,4 @@ while current decision <= the number of branches at the current fork
   current decision = the next branch of the current fork
 ## class(es) with fields and methods
 ## version*n* wish list
+List all possible paths
