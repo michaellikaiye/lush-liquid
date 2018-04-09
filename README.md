@@ -23,18 +23,25 @@ you are on treasure
 mazesolver (branch)
 
 if (at the treasure)
+
   return true
   
 if (legalmove up)
+
   make current position wall //prevents looping???
+  
   move
+  
   if (recursive abstraction)
+  
       return true;
+      
   earse move
   
 ... repeat for if legal move left, right, down
 
-(all can moves taken)
+(all legal moves taken)
+
 return false
 ## class(es) with fields and methods
 ## version*n* wish list
