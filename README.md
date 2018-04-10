@@ -10,13 +10,11 @@ Looping disallowed: Reach any stepping stone at most once.
 ## recursive abstraction
 When I am asked to 
 
-  return the boolean value of the statement “there exists one path through a maze starting at a     designated beginning and ending at treasure,” starting with a explorer at location x,y in the maze
+  return the boolean value of the statement “there exists one path through a maze starting at a     designated beginning and ending at treasure,”
   
 the recursive abstraction can
 
-  return a potential solution with explorer at 1 step in a different direction
-  
-Definition: A "direction" is orthogonal by 1 in array
+  return the boolean value of the statement “there exists one path through a maze starting at a     designated beginning one step away and ending at treasure,”
 ## base case
 you are on treasure
 ## English or pseudocode description of algorithm
@@ -28,19 +26,17 @@ if (at the treasure)
   
 if (legalmove up)
 
-  make current position wall //prevents looping???
+  make current position wall 
   
   move
   
   if (recursive abstraction)
   
-      return true;
-      
-  earse move
+    return true
+    
+  erase move
   
 ... repeat for if legal move left, right, down
-
-(all legal moves taken)
 
 return false
 ## class(es) with fields and methods
