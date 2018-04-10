@@ -20,6 +20,10 @@ you are on treasure
 ## English or pseudocode description of algorithm
 mazesolver (branch)
 
+if (on wall)
+    
+    return 
+    
 if (at the treasure)
 
   return true
