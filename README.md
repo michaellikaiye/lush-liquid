@@ -28,21 +28,7 @@ if (at the treasure)
 
   return true
   
-if (legalmove up)
-
-  make current position wall 
-  
-  move
-  
-  if (recursive abstraction)
-  
-    return true
-    
-  erase move
-  
-... repeat for if legal move left, right, down
-
-return false
+*** we know how to complete this. It'll be updated by 10
 ## class(es) with fields and methods
 ## version*n* wish list
 List all possible paths
