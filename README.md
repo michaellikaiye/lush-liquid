@@ -26,9 +26,17 @@ if (on wall)
     
 if (at the treasure)
 
-  return true
+    return true
   
-*** we know how to complete this. It'll be updated by 10
+for each direction
+
+  move 1 step
+  
+  recursive abstraction
+  
+  undo step
+  
+return false
 ## class(es) with fields and methods
 ## version*n* wish list
 List all possible paths
