@@ -14,7 +14,7 @@ When I am asked to
   
 the recursive abstraction can
 
-  return the boolean value of the statement “there exists one path through a maze starting at a     designated beginning one step away and ending at treasure,”
+  return the boolean value of the statement “there exists one path through a maze starting at a     designated beginning one step in a direction (North, East, South, West) from the previous beginning and ending at treasure,”
 ## base case
 you are on treasure
 ## English or pseudocode description of algorithm
