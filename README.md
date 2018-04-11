@@ -42,3 +42,4 @@ return false
 ## class(es) with fields and methods
 ## version*n* wish list
 List all possible paths
+Base algorithm on junctions rather than steps
