@@ -30,6 +30,8 @@ if (at the treasure)
   
 for each direction
 
+  drop wall on previous location
+
   move 1 step
   
   recursive abstraction
