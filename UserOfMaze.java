@@ -31,7 +31,7 @@ public class UserOfMaze {
         // displayer = new Displayer( Integer.parseInt( commandLine[3]));
         // displayerTest( maze);
 
-        snapshotDemo( maze);
+        // snapshotDemo( maze);
     }
 
 
@@ -156,44 +156,40 @@ public class UserOfMaze {
 
         Maze snapshot;
 
-        throw new java.lang.RuntimeException(
-            "Write code to take a snapshot of @candidate. "
-          + "Then, in @candidate, have the explorer go() out of the maze.");
+        snapshot = new Maze(candidate);
 
-        // System.out.println(
-                            // "modified candidate with no explorer"
-                          // + System.lineSeparator()
-                          // + candidate + System.lineSeparator()
-                          // + "unchanged snapshot" + System.lineSeparator()
-                          // + snapshot + System.lineSeparator()
-                          // );
+	candidate.go(Maze.NORTH);
 
-        /* Expecting...
-              modified candidate with no explorer
-              ------
-              |0** |
-              ------
+        System.out.println(
+                            "modified candidate with no explorer"
+                          + System.lineSeparator()
+                          + candidate + System.lineSeparator()
+                          + "unchanged snapshot" + System.lineSeparator()
+                          + snapshot + System.lineSeparator()
+                          );
 
-              unchanged snapshot
-              ------
-              |0e* |
-              ------
-         */
+        // Expecting...
+        //       modified candidate with no explorer
+        //       ------
+        //       |0** |
+        //       ------
 
-        // throw new java.lang.RuntimeException(
-            // "Write code to undo the go() by making @candidate refer "
-          // + "to an unchanged copy of the maze.");
+        //       unchanged snapshot
+        //       ------
+        //       |0e* |
+        //       ------
 
-        // System.out.println(
-                            // "restored candidate, with an explorer"
-                          // + System.lineSeparator()
-                          // + candidate + System.lineSeparator()
-                          // );
-        /* Expecting...
-              restored candidate, with an explorer
-              ------
-              |0e* |
-              ------
-         */
+	    candidate = snapshot;
+
+        System.out.println(
+                            "restored candidate, with an explorer"
+                          + System.lineSeparator()
+                          + candidate + System.lineSeparator()
+                          );
+        // Expecting...
+        //       restored candidate, with an explorer
+        //       ------
+        //       |0e* |
+        //       ------
     }
 }
