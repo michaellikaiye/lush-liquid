@@ -22,7 +22,7 @@ mazesolver (branch)
 
 if (on wall)
     
-    return 
+    return false
     
 if (at the treasure)
 
@@ -30,13 +30,17 @@ if (at the treasure)
   
 for each direction
 
+  make snapshot
+
   drop wall on previous location
 
   move 1 step
   
-  recursive abstraction
+  if recursive abstraction
   
-  undo step
+      return true
+  
+  else undo step
   
 return false
 ## class(es) with fields and methods
