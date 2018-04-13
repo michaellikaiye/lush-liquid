@@ -40,6 +40,13 @@ for each direction
   
 return false
 ## class(es) with fields and methods
+
+
 ## version*n* wish list
 List all possible paths
 Base algorithm on junctions rather than steps
+
+## known bugs
+
+failed to account for looping
+failed to account for when outside the maze
