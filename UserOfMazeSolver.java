@@ -24,6 +24,8 @@ public class UserOfMazeSolver {
 	MazeSolver mazeSolver = new MazeSolver(maze
 					      , Integer.parseInt( commandLine[3]
 								  ));
+        mazeSolver.solver();
+        System.out.println(mazeSolver.solver()); 
 	
 	// testbase0(mazesolver);
 
@@ -31,7 +33,7 @@ public class UserOfMazeSolver {
 
 	// testSimplest(mazeSolver);
 
-	testFinal(mazeSolver);
+	//testFinal(mazeSolver);
     }
     
     /**
