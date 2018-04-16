@@ -17,9 +17,7 @@ the recursive abstraction can
 return the boolean value of the statement “there exists one path through a maze starting at a designated beginning one step in a direction (North, East, South, West) from the previous beginning and ending at treasure.”
 ## base case
 The explorer is on the treasure.
-## English or pseudocode description of algorithm
-mazesolver (branch)
-
+## english or pseudocode description of algorithm
     if (on wall)
     
       return false
@@ -44,9 +42,7 @@ mazesolver (branch)
   
     return false
 ## class(es) with fields and methods
-
-
 ## version*n* wish list
-List all possible paths
+List all possible paths.
 
-Base algorithm on junctions rather than steps
+Base algorithm on junctions rather than steps.
