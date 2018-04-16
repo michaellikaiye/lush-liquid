@@ -51,4 +51,4 @@ List all possible paths
 Base algorithm on junctions rather than steps
 
 ## known bugs
-failed to account for the explorer exiting a maze
+failed to account for the explorer starting outside the maze
