@@ -30,7 +30,7 @@ mazesolver (branch)
   
     for each direction
 
-      make snapshot
+      take snapshot
 
       drop wall on previous location
 
