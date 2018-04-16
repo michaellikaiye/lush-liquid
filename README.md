@@ -48,6 +48,7 @@ return false
 
 ## version*n* wish list
 List all possible paths
+
 Base algorithm on junctions rather than steps
 
 ## known bugs
