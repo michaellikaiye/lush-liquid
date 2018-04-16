@@ -10,13 +10,13 @@ Looping disallowed: Reach any stepping stone at most once.
 ## recursive abstraction
 When I am asked to 
 
-  return the boolean value of the statement “there exists one path through a maze starting at a     designated beginning and ending at treasure,”
+return the boolean value of the statement “there exists one path through a maze starting at a designated beginning and ending at treasure,”
   
 the recursive abstraction can
 
-  return the boolean value of the statement “there exists one path through a maze starting at a     designated beginning one step in a direction (North, East, South, West) from the previous beginning and ending at treasure,”
+return the boolean value of the statement “there exists one path through a maze starting at a designated beginning one step in a direction (North, East, South, West) from the previous beginning and ending at treasure.”
 ## base case
-you are on treasure
+The explorer is on the treasure.
 ## English or pseudocode description of algorithm
 mazesolver (branch)
 
