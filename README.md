@@ -30,17 +30,17 @@ if (at the treasure)
   
 for each direction
 
-  make snapshot
+    make snapshot
 
-  drop wall on previous location
+    drop wall on previous location
 
-  move 1 step
+    move 1 step
   
-  if recursive abstraction
+    if recursive abstraction
   
       return true
   
-  else undo step
+    else undo step
   
 return false
 ## class(es) with fields and methods
