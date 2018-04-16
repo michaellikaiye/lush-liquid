@@ -49,4 +49,4 @@ Base algorithm on junctions rather than steps.
 ## known bugs
 Failed to account for explorer starting outside the maze.
 ## v1
-Use displayer class.
+Use the Displayer class.
