@@ -3,8 +3,9 @@
   Requires command line arguments:
   o  the name of a file containing a maze.
   o  the rank and file where an explorer is starting
+  o  the window height of the displayer
   For example,
-      java UserOfMaze mazes/4cell_treasureWest.txt -1 -1  # no explorer
+      java UserOfMaze mazes/4cell_treasureWest.txt -1 -1 10 # no explorer
  */
 public class UserOfMazeSolver {
     
@@ -20,7 +21,9 @@ public class UserOfMazeSolver {
                             );
         System.out.println( maze + System.lineSeparator());
 
-	MazeSolver mazeSolver = new MazeSolver(maze);
+	MazeSolver mazeSolver = new MazeSolver(maze
+					      , Integer.parseInt( commandLine[3]
+								  ));
 	
 	// testbase0(mazesolver);
 
@@ -34,7 +37,7 @@ public class UserOfMazeSolver {
     /**
        Maze with explorer on treasure;
       Run using a shell command like...
-          java UserOfMazeSolver mazes/intersection_treasureNorth.txt 0 1
+          java UserOfMazeSolver mazes/intersection_treasureNorth.txt 0 1 25
      */
     private static void testBase0(MazeSolver mazeSolver) {
 
@@ -43,7 +46,7 @@ public class UserOfMazeSolver {
       /**
        Maze with explorer not on treasure;
       Run using a shell command like...
-          java UserOfMazeSolver mazes/intersection_treasureNorth.txt 1 0
+          java UserOfMazeSolver mazes/intersection_treasureNorth.txt 1 0 25
      */
     private static void testBase1(MazeSolver mazeSolver) {
 
@@ -52,7 +55,7 @@ public class UserOfMazeSolver {
      /**
        Maze with explorer 1 step south of treasure;
       Run using a shell command like...
-          java UserOfMazeSolver mazes/intersection_treasureNorth.txt 1 1
+          java UserOfMazeSolver mazes/intersection_treasureNorth.txt 1 1 25
      */
     private static void testSimplest(MazeSolver mazeSolver) {
 
@@ -61,7 +64,7 @@ public class UserOfMazeSolver {
        /**
        Maze with explorer 3 steps away from treasure;
       Run using a shell command like...
-          java UserOfMazeSolver mazes/intersection_treasureNorth.txt 2 1
+          java UserOfMazeSolver mazes/intersection_treasureNorth.txt 2 1 25
      */
     private static void testFinal(MazeSolver mazeSolver) {
 

@@ -1,9 +1,20 @@
+/**
+   Has-A Maze with the current position of the explorer.
+   Uses Maze representation to evaluate whether or not the explorer can reach 
+   the treasure.
+   Records number of moves through integer stepCounter.
+   */
 public class MazeSolver {
-    Maze current;
+    
+    private Maze current;
+    private static Displayer displayer;
+    private int stepCounter;
 
-    public MazeSolver(Maze input) {
+    public MazeSolver(Maze input, int windowHeight) {
 	current = new Maze(input);
+	displayer = new Displayer(windowHeight);
     }
+    
     private final static int[] DIRECTIONS = {
 	Maze.EAST,
 	Maze.NORTH,
@@ -12,6 +23,7 @@ public class MazeSolver {
     };
     
     public boolean solver () {
+	displayer.atTopOfWindow(current + "Step:" + stepCounter++);
 	if (current.explorerIsOnA() == Maze.WALL)
 	    return false;
 	if (current.explorerIsOnA() == Maze.TREASURE)
@@ -20,15 +32,13 @@ public class MazeSolver {
 	    Maze snapShot = new Maze(current);
 	    current.dropA(Maze.WALL);
 	    current.go(direction);
-	    
-	    System.out.println(current);
 	    if (solver())
 		return true;
-	    else
+	    else {
 		current = new Maze(snapShot);
-	    System.out.println(current);
+		displayer.atTopOfWindow(current + "Step:" + stepCounter++);
+	    }
 	}
-
 	return false;
     }
 }
