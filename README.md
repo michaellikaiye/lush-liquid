@@ -20,29 +20,29 @@ you are on treasure
 ## English or pseudocode description of algorithm
 mazesolver (branch)
 
-if (on wall)
+    if (on wall)
     
-    return false
+      return false
     
-if (at the treasure)
+    if (at the treasure)
 
-    return true
-  
-for each direction
-
-    make snapshot
-
-    drop wall on previous location
-
-    move 1 step
-  
-    if recursive abstraction
-  
       return true
   
-    else undo step
+    for each direction
+
+      make snapshot
+
+      drop wall on previous location
+
+      move 1 step
   
-return false
+      if recursive abstraction
+  
+        return true
+    
+      else undo step
+  
+    return false
 ## class(es) with fields and methods
 
 
