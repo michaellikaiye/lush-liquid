@@ -47,4 +47,4 @@ List all possible paths.
 
 Base algorithm on junctions rather than steps.
 ## known bugs
-Failed to account for the explorer starting outside the maze
+Failed to account for the explorer starting outside the maze.
